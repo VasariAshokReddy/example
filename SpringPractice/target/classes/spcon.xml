@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+">
+
+	<bean class="com.sathyatech.Student" name="obj">
+		<!-- <constructor-arg> <value>10</value> </constructor-arg> <constructor-arg> 
+			<value>ashok</value> </constructor-arg> <constructor-arg> <value>25.0</value> 
+			</constructor-arg> -->
+
+		<!-- To specify the particular constructor use the attributes like -->
+		<!-- <constructor-arg type="int">
+			<value>20</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>naveen</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>20.1</value>
+		</constructor-arg> -->
+
+		<!-- based on index format -->
+		<!-- <constructor-arg index="0">
+			<value>10</value>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<value>naresh</value>
+		</constructor-arg>
+		<constructor-arg index="2">
+			<value>20.6</value>
+		</constructor-arg> -->
+		
+		<!-- based on name format -->
+		<constructor-arg name = "sid">
+		<value>15</value>
+		</constructor-arg>
+		
+		<constructor-arg name = "sname">
+		<value>vijay</value>
+		</constructor-arg>
+		
+		<constructor-arg name = "sfee">
+		<value>15.0</value>
+		</constructor-arg>
+		
+	</bean>
+	</beans>
