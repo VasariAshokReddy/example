@@ -28,6 +28,7 @@ public class ArrayDuplicate {
 	public static void main(String[] args) {
 
 		duplicateArray(new int[] {2,5,3,2,4,3,5});
+		duplicateArray(new int[]{85,56,50,50,85,56});
 	}
 
 }
