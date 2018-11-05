@@ -9,6 +9,7 @@ public class EqualityOfArrays {
 		int arr[] = {1,2,3,4,5,6};
 		int arr2[] = {1,2,3,4,5,6};
 		boolean equalOrnot = Arrays.equals(arr, arr2);
+		System.out.println("Hello Arrays");
 		System.out.println("First array :"+Arrays.toString(arr));
 		System.out.println("Second array :"+Arrays.toString(arr2));
 		if(equalOrnot)
