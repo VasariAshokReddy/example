@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
 	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/util
@@ -17,7 +18,7 @@ http://www.springframework.org/schema/context/springcontext.xsd">
 
 	<!-- value as tag -->
 
-	<bean class="org.nt.Employee" name="emp">
+	<!-- <bean class="org.nt.Employee" name="emp">
 		<property name="empId">
 			<value>10</value>
 		</property>
@@ -27,5 +28,8 @@ http://www.springframework.org/schema/context/springcontext.xsd">
 		<property name="empSal">
 			<value>10.0</value>
 		</property>
-	</bean>
+	</bean> -->
+	
+	<!-- P:Schema -->
+	<bean class ="org.nt.Employee" name = "emp" p:empId = "10" p:empName ="ashok" p:empSal="10.0"/>
 </beans>
