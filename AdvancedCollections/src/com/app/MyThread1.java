@@ -6,8 +6,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class MyThread1 extends Thread{
 
 
+	@SuppressWarnings("rawtypes")
 	static CopyOnWriteArrayList cpl = new CopyOnWriteArrayList();
 
+	@SuppressWarnings("unchecked")
 	public void run()
 	{
 		try {
@@ -22,6 +24,7 @@ public class MyThread1 extends Thread{
 		cpl.add("sathish");
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws InterruptedException{
 
 		cpl.add("ashok");

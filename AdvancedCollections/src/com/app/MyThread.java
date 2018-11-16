@@ -9,9 +9,11 @@ import java.util.Iterator;
 
 public class MyThread extends Thread{
 
+	@SuppressWarnings("rawtypes")
 	static ArrayList l = new ArrayList();
 
 	
+	@SuppressWarnings("unchecked")
 	public void run()
 	{
 		try {
@@ -25,6 +27,7 @@ public class MyThread extends Thread{
 	
 	
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws InterruptedException {
 		
 		l.add("a");
