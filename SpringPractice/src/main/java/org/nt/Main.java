@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
 	@SuppressWarnings("resource")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception,Exception{
 
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("abc.xml");
 		Employee emp = (Employee)ctx.getBean("emp");

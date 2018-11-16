@@ -9,9 +9,23 @@ http://www.springframework.org/schema/util/spring-util.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/springcontext.xsd">
 
+
+	<!-- value as attribute -->
+	<!-- <bean class="org.nt.Employee" name="emp"> <property name="empId" value= 
+		"10" /> <property name="empName" value="ashok" /> <property name="empSal" 
+		value="10.0" /> </bean> -->
+
+	<!-- value as tag -->
+
 	<bean class="org.nt.Employee" name="emp">
-		<property name="empId" value= "10" />
-		<property name="empName" value="ashok" />
-		<property name="empSal" value="10.0" />
+		<property name="empId">
+			<value>10</value>
+		</property>
+		<property name="empName">
+			<value>ashokreddy</value>
+		</property>
+		<property name="empSal">
+			<value>10.0</value>
+		</property>
 	</bean>
 </beans>
