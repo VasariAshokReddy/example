@@ -16,14 +16,19 @@ public class Test {
 		
 		Session session = factory.openSession();
 		
-		Employee emp = new Employee();
-		emp.setEmpId(1);
-		emp.setEmpName("AshokReddy");
-		emp.setEmpSal(10.0);
+		/*Employee emp = new Employee();
+		emp.setEmpId(11);
+		emp.setEmpName("Reddy");
+		emp.setEmpSal(5.0);*/
 		
+		/*Updating and deleting*/
+		Employee emp = (Employee)session.get(Employee.class, 11);
+		//emp.setEmpSal(5.5);
 		Transaction tx = session.beginTransaction();
 		
-		session.save(emp);
+		//session.save(emp);
+		//session.update(emp);
+		session.delete(emp);
 		tx.commit();
 		session.clear();
 	}
